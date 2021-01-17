@@ -10,10 +10,10 @@ namespace LanchesMac.Migrations
                 name: "Categorias",
                 columns: table => new
                 {
-                    CategoriaId = table.Column<int>(nullable: false)
+                    CategoriaId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    CategoriaNome = table.Column<string>(maxLength: 100, nullable: true),
-                    Descricao = table.Column<string>(maxLength: 200, nullable: true)
+                    CategoriaNome = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
+                    Descricao = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -24,17 +24,17 @@ namespace LanchesMac.Migrations
                 name: "Lanches",
                 columns: table => new
                 {
-                    LancheId = table.Column<int>(nullable: false)
+                    LancheId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nome = table.Column<string>(maxLength: 100, nullable: true),
-                    DescricaoCurta = table.Column<string>(maxLength: 100, nullable: true),
-                    DescricaoDetalhada = table.Column<string>(maxLength: 250, nullable: true),
-                    Preco = table.Column<decimal>(type: "decimal(18,2", nullable: false),
-                    ImagemUrl = table.Column<string>(maxLength: 200, nullable: true),
-                    ImagemThumbnailUrl = table.Column<string>(maxLength: 200, nullable: true),
-                    IsLanchePreferido = table.Column<bool>(nullable: false),
-                    EmEstoque = table.Column<bool>(nullable: false),
-                    CategoriaId = table.Column<int>(nullable: false)
+                    Nome = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
+                    DescricaoCurta = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
+                    DescricaoDetalhada = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: true),
+                    Preco = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    ImagemUrl = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: true),
+                    ImagemThumbnailUrl = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: true),
+                    IsLanchePreferido = table.Column<bool>(type: "bit", nullable: false),
+                    EmEstoque = table.Column<bool>(type: "bit", nullable: false),
+                    CategoriaId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
