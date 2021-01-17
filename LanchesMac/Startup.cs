@@ -1,4 +1,5 @@
 using LanchesMac.Context;
+using LanchesMac.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -27,6 +28,12 @@ namespace LanchesMac
         {
             services.AddDbContext<AppDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+
+            // Serviços 
+            services.AddTransient<ICategoriaRepository, CategoriaRepository>();
+            services.AddTransient<ILancheRepository, LancheRepositories>();
+
             services.AddControllersWithViews();
         }
 
