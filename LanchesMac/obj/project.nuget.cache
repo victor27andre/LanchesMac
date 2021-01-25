@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "zyvRl/TxPQQRbJbnr7Mcmz+3u8cUxSnwZMcqgPFmLHDK4CyV4UM2nuUBhoMQNa4txJaZNzVSDh0ULSLwKbCSPA==",
+  "dgSpecHash": "dU7CGLRXiOv/gxEZx4X8ofzgQJZZ4PJGEW7/MwN2E3tpSe/RBG1LGueHgYQ2pgDxx+gkj9t6BOcRZv9ksbv/1A==",
   "success": true,
   "projectFilePath": "D:\\desenvolvimento\\dotNetCore\\_AppLanches\\LanchesMac\\LanchesMac.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Victor André\\.nuget\\packages\\bootstrap\\4.6.0\\bootstrap.4.6.0.nupkg.sha512",
     "C:\\Users\\Victor André\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Victor André\\.nuget\\packages\\jquery\\3.0.0\\jquery.3.0.0.nupkg.sha512",
     "C:\\Users\\Victor André\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.2\\microsoft.aspnetcore.cryptography.internal.5.0.2.nupkg.sha512",
     "C:\\Users\\Victor André\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.2\\microsoft.aspnetcore.cryptography.keyderivation.5.0.2.nupkg.sha512",
     "C:\\Users\\Victor André\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
@@ -59,6 +61,7 @@
     "C:\\Users\\Victor André\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Victor André\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\Victor André\\.nuget\\packages\\popper.js\\1.16.1\\popper.js.1.16.1.nupkg.sha512",
     "C:\\Users\\Victor André\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\Victor André\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\Victor André\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",

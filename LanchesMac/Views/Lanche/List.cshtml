@@ -1,14 +1,25 @@
-﻿@using LanchesMac.Models
-@model IEnumerable<Lanche>
+﻿@model LancheListViewModel
 
-<div><h2>Todos os Lanches</h2></div>
+<div><h2>@Model.CategoriaAtual</h2></div>
 
-@foreach (var lanche in Model)
-{
-<div>
-    <h4>Lanche : @lanche.Nome</h4>
-    <p><img src ="@lanche.ImagemUrl" /></p>
-    <p>Preco : @lanche.Preco.ToString("c")</p>
+<div class="row">
+
+    @foreach (var lanche in Model.Lanches)
+    {
+        <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="thumbnail">
+                <img src="@lanche.ImagemUrl" class="img-rounded" alt="" />
+            </div>
+            <div>
+                <h3 class="pull-righ"> @lanche.Preco.ToString("c") </h3>
+                <h3>
+                    @lanche.Nome
+                </h3>
+                <p>@lanche.DescricaoCurta</p>
+            </div>
+
+        </div>
+
+    }
 </div>
-}
 
